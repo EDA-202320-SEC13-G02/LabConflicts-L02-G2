@@ -50,7 +50,7 @@ def printMenu():
     print("1- Cargar Libros")
     print("2- Cargar Tags")
     # TODO: Mods de Est-1 en el Lab 2, agregar opcion 3
-
+    print("3- Cargar Tags de Libros")
     print("0- Salir")
 
 
@@ -72,12 +72,15 @@ def loadTags(control):
     return tags
 
 
-def loadBooksTags(control):
+def loadBooksTags(control, filename):
     """
-    Cargar los Tags de libros
+    Carga la información que asocia tags con libros.
     """
-    # TODO: Mods de Est-1 en el Lab 2
-    pass
+    # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
+    catalog = control["model"]
+    booksfile = os.path.join(cf.data_dir, filename)
+    catalog = model.addBookTags(catalog, booksfile)
+    return model.bookTagSize(catalog)
 
 
 def firstBook(control):
@@ -85,6 +88,9 @@ def firstBook(control):
     Devuelve el primer libro del catalogo
     """
     # TODO: Mods de Est-1 en el Lab 2
+    first = controller.firstBook(control)
+    return first
+
     pass
 
 
@@ -116,6 +122,9 @@ if __name__ == "__main__":
             print("Total de libros cargados: " + str(books) + "\n")
 
             # TODO: Mods de Est-1 en el Lab 2
+            first = firstBook(control)
+            print("Primer libro cargado:\n" + str(first) + "\n")
+
             first = None
 
             # TODO: Mods de Est-2 en el Lab 2
