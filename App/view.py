@@ -49,13 +49,19 @@ def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
+<<<<<<< HEAD
     # TODO: Mods de Est-1 en el Lab 2, agregar opcion 3
 <<<<<<< HEAD
     print("3- Cargar los Tags de Libros")
 =======
     print("3- Cargar Tags de Libros")
 >>>>>>> origin/Estudiante-1
+=======
+    # TODO: Mods de Est-1, Est-2 y Est-3 en Lab 2
+    print("3- Cargar Booktags")
+>>>>>>> origin/Est--2
     print("0- Salir")
+
 
 
 def loadBooks(control):
@@ -103,7 +109,8 @@ def lastBook(control):
     """
     Devuelve el último libro cargado
     """
-    pass
+    last = controller.lastBook(control)
+    return last
 
 
 # Se crea el controlador asociado a la vista
@@ -132,7 +139,8 @@ if __name__ == "__main__":
             first = None
 
             # TODO: Mods de Est-2 en el Lab 2
-            last = None
+            last = lastBook(control)
+            print("Último libro cargado:\n" + str(last) + "\n")
 
         elif int(inputs[0]) == 2:
             print("Cargando información de tags....")
