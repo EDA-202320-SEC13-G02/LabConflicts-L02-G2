@@ -32,9 +32,9 @@ This repository is part of the data structure and algorithms (#EDA) teaching fra
 
 The students edit this section to add their names, Uniandes emails, and specify which project functionality of the project they will implement.
 
-1. Juan Sebastían Ríos, js.riosp1@uniandes.edu.co
-1. Juan David Torres Albarracín, jd.torresa1@uniandes.edu.co.
-1. Catalina García, mc.garciac1@uniandes.edu.co.
+1. Juan Sebastían Ríos, js.riosp1@uniandes.edu.co, 202223754
+1. Juan David Torres Albarracín, jd.torresa1@uniandes.edu.co, 202317608
+1. Catalina García, mc.garciac1@uniandes.edu.co 202311137
 
 [Back to top](#sample-conflicts)
 
