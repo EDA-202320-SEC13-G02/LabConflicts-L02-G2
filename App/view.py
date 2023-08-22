@@ -49,17 +49,7 @@ def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
-<<<<<<< HEAD
-    # TODO: Mods de Est-1 en el Lab 2, agregar opcion 3
-<<<<<<< HEAD
-    print("3- Cargar los Tags de Libros")
-=======
     print("3- Cargar Tags de Libros")
->>>>>>> origin/Estudiante-1
-=======
-    # TODO: Mods de Est-1, Est-2 y Est-3 en Lab 2
-    print("3- Cargar Booktags")
->>>>>>> origin/Est--2
     print("0- Salir")
 
 
@@ -87,10 +77,10 @@ def loadBooksTags(control, filename):
     Carga la información que asocia tags con libros.
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    catalog = control["model"]
-    booksfile = os.path.join(cf.data_dir, filename)
-    catalog = model.addBookTags(catalog, booksfile)
-    return model.bookTagSize(catalog)
+    booktags = controller.loadBooksTags(control,
+                                        "GoodReads/book_tags.csv")
+    return booktags
+
 
 
 def firstBook(control):
